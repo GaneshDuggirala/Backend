@@ -49,7 +49,7 @@ mongoose.connect('mongodb+srv://ganesh:Ganesh123@cluster0.niv2xkn.mongodb.net/?a
 .catch(()=>{
   console.log("Something Went Wrong!!!...")
 })
-var port =4300;
+var port =process.env.PORT;
 app.listen(port,()=>{
   console.log(`server is running http://localhost:${port}/`)
 })
